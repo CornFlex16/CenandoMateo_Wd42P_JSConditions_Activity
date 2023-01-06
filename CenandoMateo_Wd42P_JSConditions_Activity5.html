@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the number of days in a given month of a year</title>
+</head>
+<body>
+    <script>
+        let monthOf = prompt("Input the month from 1-12");
+         monthOf = parseInt(monthOf);
+        let with30days = [4, 6, 9,11];
+        let february = 2;
+        if (monthOf < 1 || monthOf > 12) {
+            console.log("Invalid Month")
+        } else if(monthOf == february) {
+            console.log("29 days” if leap year else print “28 days")
+        } else if(monthOf == with30days) {
+            console.log("30 days")  
+        } else if(monthOf !== with30days || monthOf !== february) {
+            console.log("31 days") }
+    </script>    
+</body>
+</html>

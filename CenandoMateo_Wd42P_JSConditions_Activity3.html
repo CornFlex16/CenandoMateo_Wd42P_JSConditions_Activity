@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perform arithmetic operations on two numbers</title>
+</head>
+<body>
+      <script>
+        let num1 = prompt("Input first value");
+            num1 = parseInt(num1);
+        let operatorOpt = prompt(`input +, -, x, or ÷`);
+        let num2 = prompt("Input first value");
+            num2 = parseInt(num2);
+        if (operatorOpt == "+") {
+            console.log((num1)+ "+" +(num2)+ "=" +(num1 + num2));
+          } 
+          else if (operatorOpt == "-") {
+            console.log((num1)+ "-" +(num2)+ "=" +(num1 - num2));
+          }  
+          else if (operatorOpt == "x") {
+            console.log((num1)+ "x" +(num2)+ "=" +(num1 * num2));
+          }  
+          else if (operatorOpt == "÷") {
+            console.log((num1)+ "÷" +(num2)+ "=" +(num1 / num2)); 
+          }
+     </script>
+</body>
+</html>
