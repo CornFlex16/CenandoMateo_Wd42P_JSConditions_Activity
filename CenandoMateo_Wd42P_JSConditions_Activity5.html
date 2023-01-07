@@ -8,18 +8,19 @@
 </head>
 <body>
     <script>
-        let monthOf = prompt("Input the month from 1-12");
-         monthOf = parseInt(monthOf);
-        let with30days = [4, 6, 9,11];
-        let february = 2;
-        if (monthOf < 1 || monthOf > 12) {
-            console.log("Invalid Month")
-        } else if(monthOf == february) {
-            console.log("29 days” if leap year else print “28 days")
-        } else if(monthOf == with30days) {
-            console.log("30 days")  
-        } else if(monthOf !== with30days || monthOf !== february) {
-            console.log("31 days") }
+        var inputMonth = prompt("Input month from 1-12");
+            inputMonth = parseInt(inputMonth);
+        var inputYear = prompt("Input Year Ex. 1989")
+            inputYear = parseInt(inputYear)
+
+        var getDaysInMonth = function(inputMonth,inputYear) {
+             // Here January is 1 based
+             //Day 0 is the last day in the previous month
+        return new Date(inputYear, inputMonth, 0).getDate();
+            // Here January is 0 based
+            // return new Date(year, month+1, 0).getDate();
+            };
+            console.log(getDaysInMonth(inputMonth, inputYear));
     </script>    
 </body>
 </html>
