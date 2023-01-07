@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Hours into Seconds</title>
+</head>
+<body>
+    <script>
+        let hours = prompt("input hours to convert in seconds");
+            hours = parseInt(hours);
+        function howManySeconds(hours) {
+	        let seconds = (hours * 60) * 60;
+    	    return seconds
+        }   document.write(hours +"hours is equivalent to " + howManySeconds(hours) + "seconds");
+    </script>
+    
+</body>
+</html>
